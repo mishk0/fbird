@@ -1,0 +1,149 @@
+.b-game {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.b-start-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url('img/images-sd.png') -2px -2px;
+}
+
+.b-gameover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.gameover-title {
+    display: inline-block;
+    width: 193px;
+    height: 45px;
+    background: url('img/images-sd.png') -315px -583px;
+    margin: 50px 0 50px;
+}
+
+.gameover-table {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    width: 226px;
+    height: 114px;
+    margin-bottom: 50px;
+    background: url('img/images-sd.png') -3px -910px;
+}
+
+.medal {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 26px;
+    top:42px;
+    background-image: url('img/images-sd.png');
+}
+
+.m1 {
+    background-position: -7px -821px;
+}
+.m3 {
+    background-position: -53px -821px;
+}
+.m2 {
+    background-position: -377px -165px;
+}
+.m4 {
+    background-position: -377px -119px;
+}
+
+.gameover-score, .gameover-bestscore  {
+    left: 173px;
+    top: 35px;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.5)
+}
+
+.gameover-bestscore {
+    top: 77px;
+}
+
+.title {
+    display: inline-block;
+    width: 181px;
+    height: 53px;
+    background: url('img/images-sd.png') -3px -637px;
+    margin: 50px 0 50px;
+}
+
+.img-s {
+    display: inline-block;
+    width: 114px;
+    height: 102px;
+    background: url('img/images-sd.png') -372px -227px;
+    margin-bottom: 50px;
+}
+
+.play-btn {
+    display: inline-block;
+    width: 104px;
+    height: 58px;
+
+    background: url('img/images-sd.png') -8px -697px;
+}
+
+.score {
+    position:absolute;
+    width: 100%;
+    top:30px;
+    text-align: center;
+    z-index: 2;
+}
+
+.score span {
+    display: inline-block;
+    width: 27px;
+    height: 37px;
+    margin-right: 2px;
+    background-image: url('img/images-sd.png');
+}
+
+.z1 {
+    background-position: -137px -870px;
+}
+.z2 {
+    background-position: -128px -773px;
+}
+.z3 {
+    background-position: -128px -735px;
+}
+.z4 {
+    background-position: -128px -697px;
+}
+.z5 {
+    background-position: -110px -870px;
+}
+.z6 {
+    background-position: -83px -870px;
+}
+.z7 {
+    background-position: -57px -870px;
+}
+.z8 {
+    background-position: -31px -870px;
+}
+.z9 {
+    background-position: -5px -870px;
+}
+.z0 {
+    background-position: -128px -811px;
+}
+
+
