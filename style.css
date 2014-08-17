@@ -20,14 +20,35 @@
     bottom: 0;
     top: 0;
     z-index: 2;
+    overflow: hidden;
 }
 
 .gameover-title {
     display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -97px;
+    top:-200px;
     width: 193px;
     height: 45px;
     background: url('img/images-sd.png') -315px -583px;
-    margin: 50px 0 50px;
+    transition: all 0.3s;
+}
+
+.gameover-title-tr {
+    top: 70px;
+}
+
+.gameover-table-wrapper {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    left:0;
+    transition: all 0.3s;
+}
+
+.gameover-table-wrapper-tr {
+    top: 180px;
 }
 
 .gameover-table {

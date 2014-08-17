@@ -10,6 +10,8 @@ fb.init = function(w, h) {
     fb.goscoreNode = document.querySelector('.gameover-score');
     fb.bestscoreNode = document.querySelector('.gameover-bestscore');
     fb.medalNode = document.querySelector('.medal');
+    fb.goTitleNode = document.querySelector('.gameover-title');
+    fb.goTableWrapperNode = document.querySelector('.gameover-table-wrapper');
     fb.sprite = new Image();
     fb.sprite.src = 'img/images-sd.png';
     fb.best_score = 0;
@@ -52,6 +54,8 @@ fb.setDefaultSettings = function(){
     fb.GAP = 120;
     fb.ot = new Date(); // время последнего кадра
     fb.time_animation = new Date();
+    fb.goTitleNode.classList.remove('gameover-title-tr');
+    fb.goTableWrapperNode.classList.remove('gameover-table-wrapper-tr');
 }
 
 fb.render = function() {
@@ -91,6 +95,13 @@ fb.gameOver = function(){
         medalType = 'm4';
     }
     fb.medalNode.className = 'medal ' + medalType;
+    setTimeout(function(){
+        fb.goTitleNode.classList.add('gameover-title-tr');
+    }, 0)
+    setTimeout(function(){
+        fb.goTableWrapperNode.classList.add('gameover-table-wrapper-tr');
+    }, 300)
+
 };
 
 fb.renderBird = function(t) {
