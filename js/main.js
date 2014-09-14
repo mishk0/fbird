@@ -242,16 +242,19 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-document.addEventListener('click', function(e) {
+document.addEventListener('touchstart', function(e) {
     if (e.target.classList.contains('play-btn')) {
         fb.startGame();
+    } else {
+        fb.inertion += 5;
+        fb.animation_rotate = new Date();
     }
 
 });
 
 (function() {
-    fb.WIDTH_AREA = 368;
-    fb.HEIGHT_AREA = 500;
+    fb.WIDTH_AREA = screen.width;
+    fb.HEIGHT_AREA = screen.height;
 
     fb.init(fb.WIDTH_AREA, fb.HEIGHT_AREA);
 })();
