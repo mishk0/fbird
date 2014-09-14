@@ -243,7 +243,9 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('touchstart', function(e) {
-    if (!e.target.classList.contains('play-btn')) {
+    if (e.target.classList.contains('play-btn')) {
+        fb.startGame();
+    } else {
         fb.inertion += 5;
         fb.animation_rotate = new Date();
     }
