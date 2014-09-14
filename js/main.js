@@ -254,7 +254,7 @@ document.addEventListener('touchstart', function(e) {
 
 (function() {
     fb.WIDTH_AREA = screen.width;
-    fb.HEIGHT_AREA = screen.height - 20;
+    fb.HEIGHT_AREA = screen.height - 60;
 
     fb.init(fb.WIDTH_AREA, fb.HEIGHT_AREA);
 })();
