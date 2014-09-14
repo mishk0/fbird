@@ -46,7 +46,7 @@ html, body {
 
 .gameover-table-wrapper {
     position: absolute;
-    top: 500px;
+    top: 575px;
     width: 100%;
     left:0;
     transition: all 0.3s;

@@ -258,8 +258,8 @@ document.addEventListener('click', function(e) {
 
 (function() {
     var MAX_W = 368;
-    var MAX_H = 500;
-    alert(screen.width + " " + screen.height);
+    var MAX_H = 570;
+
     fb.WIDTH_AREA = Math.min(screen.width, MAX_W);
     fb.HEIGHT_AREA = Math.min(screen.height, MAX_H)
 
