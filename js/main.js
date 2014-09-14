@@ -243,18 +243,25 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('touchstart', function(e) {
-    if (e.target.classList.contains('play-btn')) {
-        fb.startGame();
-    } else {
+    if (!e.target.classList.contains('play-btn')) {
         fb.inertion += 5;
         fb.animation_rotate = new Date();
     }
 
 });
 
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('play-btn')) {
+        fb.startGame();
+    }
+});
+
 (function() {
-    fb.WIDTH_AREA = screen.width;
-    fb.HEIGHT_AREA = screen.height;
+    var MAX_W = 368;
+    var MAX_H = 500;
+    alert(screen.width + " " + screen.height);
+    fb.WIDTH_AREA = Math.min(screen.width, MAX_W);
+    fb.HEIGHT_AREA = Math.min(screen.height, MAX_H)
 
     fb.init(fb.WIDTH_AREA, fb.HEIGHT_AREA);
 })();

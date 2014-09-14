@@ -90,15 +90,17 @@ html, body {
 
 .gameover-score, .gameover-bestscore  {
     left: 173px;
-    top: 35px;
+    top: 32px;
     position: absolute;
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
     width: 30px;
     text-shadow: 1px 1px 0 rgba(0,0,0,.5)
 }
 
 .gameover-bestscore {
-    top: 77px;
+    top: 74px;
 }
 
 .title {
